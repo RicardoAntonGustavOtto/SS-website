@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Day with Emma: Empowering Sales Success with SalesSpaice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Contact Button -->
+    <div id="contact-button" class="contact-button">
+        <button id="contact-toggle" class="contact-toggle">
+            Interested?
+            <i data-lucide="chevron-down" class="chevron"></i>
+        </button>
+        <div id="contact-dropdown" class="contact-dropdown">
+            <div class="contact-content">
+                <h3>Contact us:</h3>
+                <div class="contact-item">
+                    <i data-lucide="mail"></i>
+                    <a href="mailto:rick@salesspaice.com">rick@salesspaice.com</a>
+                </div>
+                <div class="contact-item">
+                    <i data-lucide="phone"></i>
+                    <a href="tel:+491718438999">+49 171 843 8999</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed Timeline Sidebar -->
+    <div id="timeline-sidebar" class="timeline-sidebar">
+        <div class="timeline-card">
+            <div class="timeline-title">Emma's Journey</div>
+            <div class="timeline-progress">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                    <span id="progress-percentage">0%</span> Complete
+                </div>
+            </div>
+            <div class="timeline-items">
+                <div class="timeline-item active" data-section="hero">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">Start</div>
+                        <div class="timeline-label">Introduction</div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-section="early-morning">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">6:00 AM</div>
+                        <div class="timeline-label">Strategizing for Success</div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-section="mid-morning">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">9:00 AM</div>
+                        <div class="timeline-label">Closing the Gaps</div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-section="late-morning">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">11:00 AM</div>
+                        <div class="timeline-label">Reflect and Recalibrate</div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-section="afternoon">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">1:00 PM</div>
+                        <div class="timeline-label">Event Preparation</div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-section="late-afternoon">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">4:00 PM</div>
+                        <div class="timeline-label">Driving Deals Forward</div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-section="end-of-day">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-time">6:00 PM</div>
+                        <div class="timeline-label">Wrapping Up</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="emma-avatar">
+                <div class="avatar-bg"></div>
+                <div class="avatar-main">
+                    <img src="https://static.databutton.com/public/a3e2d0d8-7c70-4ce8-8e57-a0f27067a84e/Emma DITL.png" alt="Emma - Sales Professional">
+                </div>
+                <div class="floating-icon icon-1">
+                    <i data-lucide="check-circle"></i>
+                </div>
+                <div class="floating-icon icon-2">
+                    <i data-lucide="target"></i>
+                </div>
+                <div class="floating-icon icon-3">
+                    <i data-lucide="users"></i>
+                </div>
+            </div>
+            
+            <h1 class="hero-title">
+                A Day with Emma:
+                <br>
+                <span class="hero-subtitle">Empowering Sales Success with SalesSpaice</span>
+            </h1>
+            
+            <p class="hero-description">
+                Follow Emma, a sales professional who transforms her daily routine into extraordinary results. 
+                Discover how SalesSpaice empowers every moment of her sales journey, from morning preparation 
+                to closing deals that matter.
+            </p>
+            
+            <button id="explore-btn" class="hero-btn">
+                Explore Emma's Day
+                <i data-lucide="chevron-down" class="btn-icon"></i>
+            </button>
+            <div class="scroll-hint">Scroll down to begin the journey</div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i data-lucide="chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Early Morning Section -->
+    <section id="early-morning" class="timeline-section early-morning">
+        <div class="section-bg">
+            <div class="parallax-shape shape-1"></div>
+            <div class="parallax-shape shape-2"></div>
+        </div>
+        
+        <div class="section-content">
+            <div class="section-header">
+                <div class="section-badge">6:00 AM • Early Morning</div>
+                <div class="section-icon">
+                    <i data-lucide="coffee"></i>
+                </div>
+                <h2 class="section-title">Strategizing for Success</h2>
+                <p class="section-description">
+                    Emma begins her day at NexusWorks with strategic insight and preparation
+                </p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-header">
+                        <i data-lucide="lightbulb"></i>
+                        <h3>Morning Insights</h3>
+                    </div>
+                    <div class="insights-list">
+                        <div class="insight-item">
+                            <i data-lucide="trending-up"></i>
+                            <span>Market trends analysis</span>
+                        </div>
+                        <div class="insight-item">
+                            <i data-lucide="users"></i>
+                            <span>Client priority mapping</span>
+                        </div>
+                        <div class="insight-item">
+                            <i data-lucide="target"></i>
+                            <span>Daily goal setting</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card">
+                    <div class="card-header">
+                        <i data-lucide="bar-chart-3"></i>
+                        <h3>Performance Dashboard</h3>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="metric">
+                            <div class="metric-value">94%</div>
+                            <div class="metric-label">Goal Achievement</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">127</div>
+                            <div class="metric-label">Active Leads</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">€2.4M</div>
+                            <div class="metric-label">Pipeline Value</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mid-Morning Section -->
+    <section id="mid-morning" class="timeline-section mid-morning">
+        <div class="section-bg">
+            <div class="parallax-shape shape-3"></div>
+            <div class="parallax-shape shape-4"></div>
+        </div>
+        
+        <div class="section-content">
+            <div class="section-header">
+                <div class="section-badge">9:00 AM • Mid-Morning</div>
+                <div class="section-icon">
+                    <i data-lucide="users"></i>
+                </div>
+                <h2 class="section-title">Closing the Gaps</h2>
+                <p class="section-description">
+                    Emma navigates complex client conversations with confidence and precision
+                </p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-card call-simulation">
+                    <div class="card-header">
+                        <i data-lucide="phone"></i>
+                        <h3>Client Call in Progress</h3>
+                    </div>
+                    <div class="call-phases">
+                        <div class="call-phase active">
+                            <div class="phase-label">Client Question</div>
+                            <div class="phase-text">"How does NexusFlow compare to other solutions?"</div>
+                        </div>
+                        <div class="call-phase">
+                            <div class="phase-label">AI Assistance</div>
+                            <div class="phase-text">Suggesting comparison chart for scalability concerns</div>
+                        </div>
+                        <div class="call-phase">
+                            <div class="phase-label">Emma's Response</div>
+                            <div class="phase-text">"Let me show you our competitive advantages..."</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card competitor-analysis">
+                    <div class="card-header">
+                        <i data-lucide="award"></i>
+                        <h3>Competitive Analysis</h3>
+                    </div>
+                    <div class="competitors">
+                        <div class="competitor">
+                            <div class="competitor-name">NexusFlow</div>
+                            <div class="competitor-score score-high">95</div>
+                            <div class="features">Enterprise Scale • IoT Integration • Real-time Analytics</div>
+                        </div>
+                        <div class="competitor">
+                            <div class="competitor-name">Competitor A</div>
+                            <div class="competitor-score score-medium">78</div>
+                            <div class="features">Basic Scale • Limited IoT • Static Reports</div>
+                        </div>
+                        <div class="competitor">
+                            <div class="competitor-name">Competitor B</div>
+                            <div class="competitor-score score-low">65</div>
+                            <div class="features">Small Scale • No IoT • Manual Process</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Late Morning Section -->
+    <section id="late-morning" class="timeline-section late-morning">
+        <div class="section-bg">
+            <div class="parallax-shape shape-5"></div>
+            <div class="parallax-shape shape-6"></div>
+        </div>
+        
+        <div class="section-content">
+            <div class="section-header">
+                <div class="section-badge">11:00 AM • Late Morning</div>
+                <div class="section-icon">
+                    <i data-lucide="trending-up"></i>
+                </div>
+                <h2 class="section-title">Reflect and Recalibrate</h2>
+                <p class="section-description">
+                    Emma analyzes her morning performance and adjusts her strategy
+                </p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-card analytics">
+                    <div class="card-header">
+                        <i data-lucide="bar-chart-3"></i>
+                        <h3>Morning Performance</h3>
+                    </div>
+                    <div class="performance-metrics">
+                        <div class="metric-row">
+                            <span>Calls Completed</span>
+                            <div class="metric-bar">
+                                <div class="bar-fill" style="width: 85%"></div>
+                                <span>8/10</span>
+                            </div>
+                        </div>
+                        <div class="metric-row">
+                            <span>Follow-ups Sent</span>
+                            <div class="metric-bar">
+                                <div class="bar-fill" style="width: 100%"></div>
+                                <span>12/12</span>
+                            </div>
+                        </div>
+                        <div class="metric-row">
+                            <span>Demos Scheduled</span>
+                            <div class="metric-bar">
+                                <div class="bar-fill" style="width: 75%"></div>
+                                <span>3/4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card strategy">
+                    <div class="card-header">
+                        <i data-lucide="target"></i>
+                        <h3>Strategy Adjustments</h3>
+                    </div>
+                    <div class="strategy-items">
+                        <div class="strategy-item">
+                            <i data-lucide="check-circle"></i>
+                            <span>Focus on enterprise clients this afternoon</span>
+                        </div>
+                        <div class="strategy-item">
+                            <i data-lucide="clock"></i>
+                            <span>Schedule follow-up for missed call</span>
+                        </div>
+                        <div class="strategy-item">
+                            <i data-lucide="message-square"></i>
+                            <span>Prepare personalized demos for prospects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Afternoon Section -->
+    <section id="afternoon" class="timeline-section afternoon">
+        <div class="section-bg">
+            <div class="parallax-shape shape-7"></div>
+            <div class="parallax-shape shape-8"></div>
+        </div>
+        
+        <div class="section-content">
+            <div class="section-header">
+                <div class="section-badge">1:00 PM • Afternoon</div>
+                <div class="section-icon">
+                    <i data-lucide="calendar"></i>
+                </div>
+                <h2 class="section-title">Event Preparation with EventSpaice</h2>
+                <p class="section-description">
+                    Emma prepares for the upcoming NexusWorks product launch event
+                </p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-card event-planning">
+                    <div class="card-header">
+                        <i data-lucide="calendar"></i>
+                        <h3>Event Timeline</h3>
+                    </div>
+                    <div class="event-timeline">
+                        <div class="timeline-event">
+                            <div class="event-time">2:00 PM</div>
+                            <div class="event-desc">Venue setup and tech check</div>
+                        </div>
+                        <div class="timeline-event">
+                            <div class="event-time">3:30 PM</div>
+                            <div class="event-desc">Guest registration opens</div>
+                        </div>
+                        <div class="timeline-event">
+                            <div class="event-time">4:00 PM</div>
+                            <div class="event-desc">Product demonstration begins</div>
+                        </div>
+                        <div class="timeline-event">
+                            <div class="event-time">5:00 PM</div>
+                            <div class="event-desc">Networking and Q&A session</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card attendees">
+                    <div class="card-header">
+                        <i data-lucide="users"></i>
+                        <h3>Expected Attendees</h3>
+                    </div>
+                    <div class="attendee-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">45</div>
+                            <div class="stat-label">Confirmed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">VIP Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">New Prospects</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Late Afternoon Section -->
+    <section id="late-afternoon" class="timeline-section late-afternoon">
+        <div class="section-bg">
+            <div class="parallax-shape shape-9"></div>
+            <div class="parallax-shape shape-10"></div>
+        </div>
+        
+        <div class="section-content">
+            <div class="section-header">
+                <div class="section-badge">4:00 PM • Late Afternoon</div>
+                <div class="section-icon">
+                    <i data-lucide="target"></i>
+                </div>
+                <h2 class="section-title">Driving Deals Forward</h2>
+                <p class="section-description">
+                    Emma focuses on high-priority deals and closes important negotiations
+                </p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-card deals-pipeline">
+                    <div class="card-header">
+                        <i data-lucide="trending-up"></i>
+                        <h3>Active Deals</h3>
+                    </div>
+                    <div class="deals-list">
+                        <div class="deal-item">
+                            <div class="deal-info">
+                                <div class="deal-name">TechCorp Integration</div>
+                                <div class="deal-value">€450K</div>
+                            </div>
+                            <div class="deal-progress">
+                                <div class="progress-bar">
+                                    <div class="bar-fill" style="width: 85%"></div>
+                                </div>
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="deal-item">
+                            <div class="deal-info">
+                                <div class="deal-name">Global Manufacturing</div>
+                                <div class="deal-value">€720K</div>
+                            </div>
+                            <div class="deal-progress">
+                                <div class="progress-bar">
+                                    <div class="bar-fill" style="width: 65%"></div>
+                                </div>
+                                <span>65%</span>
+                            </div>
+                        </div>
+                        <div class="deal-item">
+                            <div class="deal-info">
+                                <div class="deal-name">StartupX Platform</div>
+                                <div class="deal-value">€180K</div>
+                            </div>
+                            <div class="deal-progress">
+                                <div class="progress-bar">
+                                    <div class="bar-fill" style="width: 90%"></div>
+                                </div>
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card negotiation">
+                    <div class="card-header">
+                        <i data-lucide="message-square"></i>
+                        <h3>Negotiation Status</h3>
+                    </div>
+                    <div class="negotiation-updates">
+                        <div class="update-item">
+                            <div class="update-time">3:45 PM</div>
+                            <div class="update-text">TechCorp approved final terms</div>
+                            <div class="update-status status-success">✓</div>
+                        </div>
+                        <div class="update-item">
+                            <div class="update-time">3:20 PM</div>
+                            <div class="update-text">Contract sent to Global Manufacturing</div>
+                            <div class="update-status status-pending">⏳</div>
+                        </div>
+                        <div class="update-item">
+                            <div class="update-time">2:55 PM</div>
+                            <div class="update-text">StartupX requested pricing adjustment</div>
+                            <div class="update-status status-review">📝</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of Day Section -->
+    <section id="end-of-day" class="timeline-section end-of-day">
+        <div class="section-bg">
+            <div class="parallax-shape shape-11"></div>
+            <div class="parallax-shape shape-12"></div>
+        </div>
+        
+        <div class="section-content">
+            <div class="section-header">
+                <div class="section-badge">6:00 PM • End of Day</div>
+                <div class="section-icon">
+                    <i data-lucide="check-circle"></i>
+                </div>
+                <h2 class="section-title">Wrapping Up and Looking Ahead</h2>
+                <p class="section-description">
+                    Emma reviews her accomplishments and prepares for tomorrow's opportunities
+                </p>
+            </div>
+            
+            <div class="content-grid">
+                <div class="content-card daily-summary">
+                    <div class="card-header">
+                        <i data-lucide="award"></i>
+                        <h3>Today's Achievements</h3>
+                    </div>
+                    <div class="achievements">
+                        <div class="achievement-item">
+                            <i data-lucide="check-circle"></i>
+                            <span>3 deals moved to final stage</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i data-lucide="users"></i>
+                            <span>15 new leads qualified</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i data-lucide="calendar"></i>
+                            <span>Successful product launch event</span>
+                        </div>
+                        <div class="achievement-item">
+                            <i data-lucide="trending-up"></i>
+                            <span>€1.35M in pipeline progress</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card tomorrow-prep">
+                    <div class="card-header">
+                        <i data-lucide="calendar"></i>
+                        <h3>Tomorrow's Priorities</h3>
+                    </div>
+                    <div class="priorities">
+                        <div class="priority-item">
+                            <div class="priority-time">9:00 AM</div>
+                            <div class="priority-task">TechCorp contract signing</div>
+                        </div>
+                        <div class="priority-item">
+                            <div class="priority-time">11:00 AM</div>
+                            <div class="priority-task">Global Manufacturing demo</div>
+                        </div>
+                        <div class="priority-item">
+                            <div class="priority-time">2:00 PM</div>
+                            <div class="priority-task">Team strategy meeting</div>
+                        </div>
+                        <div class="priority-item">
+                            <div class="priority-time">4:00 PM</div>
+                            <div class="priority-task">New lead qualification calls</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>SalesSpaice</h3>
+                <div class="company-info">
+                    <p>SalesSpaice GmbH</p>
+                    <p>Am Hauptbahnhof 6</p>
+                    <p>D-53111 Bonn</p>
+                </div>
+                <div class="contact-info">
+                    <p>Telefon: +49 171 843 8999</p>
+                    <p>E-Mail: rick@salesspaice.com</p>
+                    <p>Internet: www.salesspaice.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <div class="legal-links">
+                    <a href="impressum.html">Impressum & Datenschutz</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 SalesSpaice GmbH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
